@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoCartOutline } from 'react-icons/io5';
+import logo from '../../images/logo2.png';
 
 
 const Navbar = () => {
@@ -10,7 +11,8 @@ const Navbar = () => {
                     <div className="flex justify-between items-center py-5 md:justify-start md:space-x-10">
                         <div className="flex justify-start lg:w-0 lg:flex-1">
                             <a href="/">
-                                <span className="font-medium text-gray-500 hover:text-gray-900 text-2xl">Red Onion</span>
+                                <img className='w-1/3' src={logo} alt="" />
+                                {/* <span className="font-medium text-gray-500 hover:text-gray-900 text-2xl">Red Onion</span> */}
                             </a>
                         </div>
                         <div className="-mr-2 -my-2 md:hidden">
