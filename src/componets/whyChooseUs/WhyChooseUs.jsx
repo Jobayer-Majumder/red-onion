@@ -6,10 +6,10 @@ const WhyChooseUs = () => {
     return (
         <>
             <section>
-                <div className="container mx-auto">
-                    <div className="w-11/12 mx-auto px-5 py-4">
-                        <h4 className='text-xl font-medium'>Why You Choose Us</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, facilis.</p>
+                <div className="container mx-auto pt-5">
+                    <div className="w-11/12 mx-auto px-5 py-5">
+                        <h1 className='mb-3 text-2xl md:text-4xl font-medium text-gray-500'>Why You Choose Us</h1>
+                        <p className='text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Vel quo sed aperiam necessitatibus <br /> itaque recusandae eius impedit incidunt, iure assumenda?</p>
                     </div>
                     <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         {
