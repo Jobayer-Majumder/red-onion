@@ -5,7 +5,7 @@ import SingleChooseUs from './SingleChooseUs';
 const WhyChooseUs = () => {
     return (
         <>
-            <section>
+            <section className=' pt-8 pb-16'>
                 <div className="container mx-auto pt-5">
                     <div className="w-11/12 mx-auto px-5 py-5">
                         <h1 className='mb-3 text-2xl md:text-4xl font-medium text-gray-500'>Why You Choose Us</h1>

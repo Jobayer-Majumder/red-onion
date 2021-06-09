@@ -17,33 +17,41 @@ const Footer = () => {
                             <div className="left">
                                 {
                                     footerDataColLeft.map((link, index) =>
-                                        <li className='list-none py-1' key={index++}>
-                                            {link.title}
-                                        </li>
+                                        <>
+                                            <a href={link.link}>
+                                                <li className='list-none py-1' key={index++}>{link.title}</li>
+                                            </a>
+                                        </>
                                     )
                                 }
                             </div>
                             <div className="right">
                                 {
                                     footerDataColRight.map((link, index) =>
-                                        <li className='list-none py-1' key={index++}>
-                                            {link.title}
-                                        </li>
+                                        <>
+                                            <a href={link.link}>
+                                                <li className='list-none py-1' key={index++}>{link.title}</li>
+                                            </a>
+                                        </>
                                     )
                                 }
                             </div>
                         </div>
                     </div>
                     <div className="pt-12">
-                        <hr className='border-gray-800'/>
+                        <hr className='border-gray-800' />
                         <div className="grid grid-cols-2 pt-3">
                             <div className="text-gray-500">
                                 <p>Copyright © {new Date().getFullYear()}</p>
                             </div>
                             <div className="flex justify-evenly text-gray-500">
                                 {
-                                    bottomData.map((link, index) => 
-                                        <li className='list-none' key={index++}>{link.title}</li>
+                                    bottomData.map((link, index) =>
+                                        <>
+                                            <a href={link.link}>
+                                                <li className='list-none' key={index++}>{link.title}</li>
+                                            </a>
+                                        </>
                                     )
                                 }
                             </div>

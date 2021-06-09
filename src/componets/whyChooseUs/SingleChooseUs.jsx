@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { BsArrowRightShort } from 'react-icons/bs';
 
 
 const SingleChooseUs = ({ chooseUs }) => {
@@ -14,10 +14,14 @@ const SingleChooseUs = ({ chooseUs }) => {
                         <h5 className='text-2xl bg-red-500 text-white p-2 rounded-full'>{icon}</h5>
                     </div>
                     <div>
-                    <h5 className='text-xl font-medium'>{name}</h5>
-                    <ps className='text-gray-500'>{desc}</ps>
+                        <h5 className='text-xl font-medium'>{name}</h5>
+                        <ps className='text-gray-500'>{desc}</ps>
+                        <a href="/" className='text-blue-500'>
+                            <p className='mt-2'>
+                                See More <BsArrowRightShort className='text-white inline bg-green-500 rounded-full'/>
+                            </p>
+                        </a>
                     </div>
-                    
                 </div>
             </div>
         </>
