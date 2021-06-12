@@ -1,6 +1,6 @@
 import React from 'react';
 import breakfastData from './breakfastData/BreakfastData';
-import SingleBreakfast from './SingleBreakfast';
+import SingleBreakfast from './singleBreakfast/SingleBreakfast';
 
 const BreakFast = () => {
     return (
