@@ -7,12 +7,12 @@ import logo from '../../images/logo2.png';
 
 const Navbar = () => {
     const state = useSelector(state => state?.userData)
-    console.log(state)
+    // console.log(state)
 
 
     return (
         <>
-            <div className="relative bg-white">
+            <div className="relative bg-white sticky">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6">
                     <div className="flex justify-between items-center py-5 md:justify-start md:space-x-10">
                         <div className="flex justify-start lg:w-0 lg:flex-1">

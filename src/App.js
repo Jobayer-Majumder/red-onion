@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Login from './pages/authentication/Login';
+import MenuDetails from './pages/menuDetails/MenuDetails';
 
 
 
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route exact path='/'>
             <Home />
+          </Route>
+          <Route path='/menu/:id'>
+            <MenuDetails />
           </Route>
           <Route path='/login'>
             <Login />
