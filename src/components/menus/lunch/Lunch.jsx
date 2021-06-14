@@ -1,6 +1,8 @@
 import React from 'react';
-import lunchData from './lunchData/LunchData';
+import fakeData from '../../../fakeData/FakeData';
 import SingleLunch from './singleLunch/SingleLunch';
+
+const lunchData = fakeData.filter(data => data.category === 'lunch')
 
 const Lunch = () => {
     return (
