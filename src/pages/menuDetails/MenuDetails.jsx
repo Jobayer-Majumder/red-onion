@@ -31,7 +31,7 @@ const MenuDetails = () => {
         setQuantity(() => quantity + 1)
     }
     const handleMinusCount = () => {
-        if(quantity > 0){
+        if (quantity > 1) {
             setQuantity(() => quantity - 1)
         }
     }
@@ -40,16 +40,18 @@ const MenuDetails = () => {
         <>
             <section>
                 <Navbar />
-                <div className="container mx-auto" style={{ minHeight: '100vh' }}>
+                <div className="container mx-3 lg:mx-auto flex justify-center items-center" style={{ minHeight: '100vh' }}>
                     <div className="grid grid-cols-1 md:grid-cols-2">
                         <div className="flex flex-col justify-center">
-                            <h1 className='text-4xl mb-8'>{name}</h1>
+                            <h1 className='text-4xl mb-6'>{name}</h1>
                             <p className='text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum nam dignissimos similique dolorem voluptate laboriosam mollitia, veniam nihil rem voluptatibus, obcaecati hic porro. Delectus amet ab eveniet minima beatae!</p>
-                            <h2 className="font-bold text-xl pt-4">${price}</h2>
-                            <div className="p-4">
-                                <BiPlus onClick={handlePlusCount} className='inline m-2 text-2xl'/>
-                                <h2 className='font-bold mb-3 inline'>{quantity}</h2>
-                                <BiMinus onClick={handleMinusCount} className='inline m-2 text-2xl' />
+                            <div className="px-4 py-6">
+                                <h2 className="font-bold text-xl inline px-2">${price}</h2>
+                                <div className="inline border py-3 px-2 rounded-full">
+                                    <BiPlus onClick={handlePlusCount} className='inline m-2 text-2xl' />
+                                    <h2 className='font-bold mb-3 inline'>{quantity}</h2>
+                                    <BiMinus onClick={handleMinusCount} className='inline m-2 text-2xl' />
+                                </div>
                                 <button onClick={handleAddToCart} className='mt-3 px-4 py-2 rounded-full text-white bg-red-400 block'><IoCartOutline className='inline' /> Add</button>
                             </div>
                         </div>

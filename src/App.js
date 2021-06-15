@@ -7,6 +7,7 @@ import {
 import Home from './pages/home/Home';
 import Login from './pages/authentication/Login';
 import MenuDetails from './pages/menuDetails/MenuDetails';
+import CheckOut from './pages/checkOut/CheckOut';
 
 
 
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path='/login'>
             <Login />
+          </Route>
+          <Route path='/checkout'>
+            <CheckOut />
           </Route>
           <Route path='*'>
             <h4>Page Not Found please try again later</h4>
